@@ -3,10 +3,12 @@
     --title-text-color: #2E2F42;
     --brand-color: #4D5AE5;
     --active-color: #404BBF;
+    --active-accent-color: #31D0AA;
     --accent-color: #E7E9FC;
     --primary-white-color: #FFFFFF;
     --light-color: #F4F4FD;
     --dark-background-color: #2E2F42;
+    --box-color: #8E8F99;
 }
 
 body {
@@ -178,7 +180,6 @@ p {
 
 .hero-title {
     width: 496px;
-    margin-top: 0;
     margin-bottom: 48px;
     margin-right: auto;
     margin-left: auto;
@@ -223,7 +224,6 @@ p {
 }
 
 .section-title {
-    margin-top: 0;
     margin-bottom: 72px;
 
     color: var(--title-text-color);
@@ -237,7 +237,6 @@ p {
 .principles-list .title,
 .team-list .title,
 .works-list .title {
-    margin-top: 0;
     margin-bottom: 8px;
 
     color: var(--title-text-color);
@@ -263,6 +262,7 @@ p {
     height: 112px;
     width: 264px;
     margin-bottom: 8px;
+    background-size: 64px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--light-color);
@@ -325,10 +325,79 @@ p {
     padding: 32px 16px;
 }
 
+.team-description {
+    margin-bottom: 8px;
+}
+
+.team-list-icon {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.team-link-icon {
+    display: flex;
+    background-color: var(--brand-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: var(--active-color);
+}
+
+.team-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
 /* Customers section */
 
 .customers {
     padding-top: 130px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--box-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--box-color)
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--active-color);
+    border: 1px solid var(--active-color);
+}
+
+.customers-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
 }
 
 /* Works section */
@@ -380,14 +449,27 @@ p {
     background-color: var(--primary-white-color);
 }
 
-.works-description {
-    color: var(--primary-text-color);
+.works-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.works-link:hover,
+.works-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .works-card {
     padding: 32px 0 32px 16px;
     border: 1px solid var(--accent-color);
     border-top: 0;
+}
+
+.works-description {
+    color: var(--primary-text-color);
 }
 
 /* Footer */
@@ -397,6 +479,15 @@ p {
     padding-bottom: 100px;
 
     background-color: var(--dark-background-color);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-content {
+    max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -413,7 +504,53 @@ p {
 }
 
 .footer-description {
-    max-width: 264px;
-
     color: var(--accent-color);
+}
+
+.footer-social {
+    max-width: 208px;
+}
+
+.footer-title-icon {
+    margin-bottom: 16px;
+
+    color: var(--primary-white-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 1.5px; */
+    letter-spacing: 0.02em;
+}
+
+.footer-list-icon {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-item-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link-icon {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: var(--active-accent-color);
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
