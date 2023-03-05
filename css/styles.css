@@ -347,7 +347,6 @@ p {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    color: var(--light-color);
 }
 
 .team-link-icon:hover,
@@ -358,7 +357,7 @@ p {
 .team-icon {
     width: 16px;
     height: 16px;
-    fill: currentColor;
+    fill: var(--light-color);
 }
 
 /* Customers section */
@@ -519,7 +518,7 @@ p {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    /* line-height: 1.5px; */
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -541,7 +540,6 @@ p {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    color: var(--light-color);
 }
 
 .footer-link-icon:hover,
@@ -552,5 +550,5 @@ p {
 .footer-icon {
     width: 24px;
     height: 24px;
-    fill: currentColor;
+    fill: var(--light-color);
 }
